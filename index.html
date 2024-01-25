@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Color Scheme Generator</title>
+</head>
+<body>
+    <main>
+        <section id="scheme-generator" class="scheme-generator container">
+            <form>
+                <input type="color" id="colorPicker">
+                <select id="color-mode">
+                    <option>Monochrome</option>
+                    <option>Monochrome-dark</option>
+                    <option>Monochrome-light</option>
+                    <option>Analogic</option>
+                    <option>Complement</option>
+                    <option>Analogic-complement</option>
+                    <option>Triad</option>
+                </select>
+                <button type="submit" id="submit">Get Color Scheme</button>
+            </form>
+
+            <div id="colors">
+                <div class="color" id="color1"></div>
+                <div class="color" id="color2"></div>
+                <div class="color" id="color3"></div>
+                <div class="color" id="color4"></div>
+                <div class="color" id="color5"></div>
+                <div class="color" id="color6"></div>
+                <p class="label" id="label1" data-copy="1"></p>
+                <p class="label" id="label2" data-copy="2"></p>
+                <p class="label" id="label3" data-copy="3"></p>
+                <p class="label" id="label4" data-copy="4"></p>
+                <p class="label" id="label5" data-copy="5"></p>
+                <p class="label" id="label6" data-copy="6"></p>
+            </div>
+        </section>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
